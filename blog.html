@@ -1,0 +1,42 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Hotlap Automovilismo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>Comunidad</h2>
+    <p>Participá comentando en nuestro foro. Usamos Disqus para facilitar los comentarios.</p>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = 'blog';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://TU_NOMBRE_DE_USUARIO.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Por favor activá JavaScript para ver los comentarios de Disqus.</noscript>
+  </section>
+</body>
+</html>
