@@ -11,12 +11,12 @@
     <img src="img/logo.png" alt="Hotlap Automovilismo" class="logo" />
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#noticias">Noticias</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#calendario">Calendario</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -24,55 +24,6 @@
   <section id="inicio">
     <h1>Bienvenidos a Hotlap Automovilismo</h1>
     <p>Tu fuente de noticias, videos y comunidad sobre el automovilismo nacional.</p>
-  </section>
-
-  <section id="noticias">
-    <h2>Noticias</h2>
-    <article>
-      <h3>🏁 Nueva fecha del campeonato confirmada</h3>
-      <p>Este fin de semana se corre en Córdoba con grandes expectativas...</p>
-    </article>
-    <article>
-      <h3>🔥 Entrevista exclusiva a pilotos del TC2000</h3>
-      <p>No te pierdas las declaraciones previas a la carrera en nuestro canal.</p>
-    </article>
-  </section>
-
-  <section id="videos">
-    <h2>Ultimo video</h2>
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_HxmM-sP968&t=1s" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section id="calendario">
-    <h2>Calendario de Carreras</h2>
-    <ul>
-      <li>📅 20 de Abril – Autódromo de Buenos Aires</li>
-      <li>📅 4 de Mayo – Termas de Río Hondo</li>
-      <li>📅 18 de Mayo – San Nicolás</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="#">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section id="blog">
-    <h2>Blog / Foro</h2>
-    <div id="disqus_thread"></div>
   </section>
 
   <footer>
@@ -85,19 +36,5 @@
     </ul>
     <p>&copy; 2025 Hotlap Automovilismo</p>
   </footer>
-
-  <script>
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = "hotlap-blog";
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://hotlapautomovilismo.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-
 </body>
 </html>
